@@ -1,0 +1,38 @@
+# —— 凭证与登录态（严禁提交）——
+.panda/
+credentials.json
+*.credentials.json
+*.token
+config.local.*
+*.local.json
+.env
+.env.local
+.env.*.local
+
+# —— Python ——
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# —— 每日实时运行产物（含账户权益/持仓，默认不入库）——
+/reports/
+/snapshots/
+/raw/
+/tech_scan_output/
+/three_axes_latest.md
+/three_axes_brief.md
+
+# —— 守护进程运行产物（guard/keepalive_shadow.sh 仍入库）——
+guard/*.log
+guard/*.pid
+guard/STOP
+guard/stop_registry.json
+guard/state.json
+guard/*.json
+
+# —— 临时与打包 ——
+.tmp*/
+.tmp-*
+*.tar.gz
+.DS_Store
